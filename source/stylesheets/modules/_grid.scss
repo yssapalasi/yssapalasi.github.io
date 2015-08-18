@@ -1,0 +1,60 @@
+.row {
+  &:before,
+  &:after {
+      content: "";
+      display: table;
+  }
+  &:after {
+      clear: both;
+  }
+}
+
+@for $i from 1 through 24 {
+  .span_#{$i} {
+    @include colSpan($i, 24);
+  }
+}
+
+.one_half {
+  @extend .span_12;
+}
+
+.one_third {
+  @extend .span_8;
+}
+
+.two_thirds {
+  @extend .span_16;
+}
+
+.one_quarter {
+  @extend .span_6;
+}
+
+.one_fifth {
+  @extend .span_5;
+  width: 20%;
+}
+
+.one_sixth {
+  @extend .span_4;
+}
+
+.three_quarters {
+  @extend .span_18;
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .one_half, .one_third, .two_thirds, .one_quarter, .one_fifth, .one_sixth, .two_quarters, .three_quarters {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .one_half, .one_third, .two_thirds, .one_sixth, .two_quarters, .three_quarters {
+    width: 100% !important;
+  }
+
+  .one_quarter, .one_fifth {
+    width: 50% !important;
+  }
+}

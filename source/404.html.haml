@@ -1,0 +1,12 @@
+- content_for :head do
+  %title 404 | Page Not Found
+  %meta{:name => "description", :content => "404 - Page Not Found"}/
+  %meta{:name => "keywords", :content => "UI design, html, css, wordpress, scss, haml"}/
+
+#four-oh-four
+  .content
+    %h2 404
+
+    %p The page you requested cannot be found. You may have mistyped the address or the page may have moved.
+
+    = link_to "Go back to home page", '/', class: 'btn btn-outline'

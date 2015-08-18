@@ -1,0 +1,19 @@
+// Colours
+$main-dark:       #333;
+$main-color:      #986056;
+$secondary-color: #d1dee6;
+$tertiary-color:  #ADC6D5;
+$main-grey:       #888;
+$gold:            #c9b798;
+
+// Breakpoints
+$breakpoint-desktop: 1200px;
+$breakpoint-tablet: 980px;
+$breakpoint-mobile: 600px;
+
+$gutter: 2em;
+
+// Typography
+
+@import "//fonts.googleapis.com/css?family=Montserrat:400,700";
+@import "//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";

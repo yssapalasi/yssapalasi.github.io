@@ -1,0 +1,106 @@
+#nav {
+  position: absolute;
+  z-index: 9999;
+  top: 1em;
+  left: 1em;
+  padding: 1.5em 0;
+
+  .nav {
+    padding: 2em 0 0 0;
+    margin: 0;
+    list-style: none;
+    min-width: 250px;
+    display: none;
+
+    a {
+      color: $secondary-color;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0.5em 1.5em;
+      display: block;
+
+      &:hover {
+        background: darken($main-dark, 5%);
+      }
+    }
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  &.dark {
+    background: $main-dark;
+  }
+}
+
+$button-size : 2.5em;
+$transition: .3s; // increase this to see the transformations in slow-motion
+
+.nav-button, .close-button {
+  display: inline-block;
+  transition: .3s;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 1.5em;
+
+  &:hover {
+    opacity: 1;
+  }
+
+}
+
+@mixin line {
+  display: inline-block;
+  width: $button-size;
+  height: $button-size/8;
+  background: $main-dark;
+  transition: $transition;
+}
+
+.lines {
+
+  @include line;
+  position: relative;
+
+  &:before, &:after {
+
+   @include line;
+    position: absolute;
+      left:0;
+    content: '';
+    transform-origin: $button-size/14 center;
+  }
+  &:before { top: $button-size/4; }
+  &:after { top: -$button-size/4; }
+}
+
+.nav-button:hover, .close-button:hover {
+  opacity: 1;
+
+  .lines {
+    &:before { top: $button-size/3.5; }
+    &:after { top: -$button-size/3.5; }
+  }
+}
+
+.nav-button.close, .close-button.close {
+  .lines{
+
+    background: transparent;
+
+    &:before, &:after{
+      transform-origin: 50% 50%;
+      top:0;
+      width: $button-size;
+      background: $secondary-color;
+    }
+
+    &:before{
+      transform: rotate3d(0,0,1,45deg);
+    }
+    &:after{
+      transform: rotate3d(0,0,1,-45deg);
+    }
+  }
+}

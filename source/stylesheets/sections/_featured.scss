@@ -1,0 +1,22 @@
+#featured-projects {
+  padding: 2em 0;
+
+  img {
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      @include transform (scale(1.05));
+    }
+
+    &.last, &.second {
+      max-width: 90%;
+    }
+  }
+
+  .feat-proj {
+    margin-bottom: 2em;
+  }
+}

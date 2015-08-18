@@ -1,0 +1,20 @@
+%h2.title Projects
+
+.feat-projects
+  .row.animatedParent
+    .feat-proj.one_half.animated.fadeInUpShort
+      = link_to (tag :img, src: "images/projects/10k-challenge-thumb.png", alt: "Challenge App"), 'projects.html#challenge-app'
+
+    .feat-proj.one_half.animated.fadeInUpShort
+      = link_to (tag :img, src: "images/projects/free-spirit-dining-thumb.png", class: "second", alt: "Free Spirit Dining"), 'projects.html#free-spirit-dining'
+
+  .row.animatedParent
+    .feat-proj.one_half.animated.fadeInUpShort
+      = link_to (tag :img, src: "images/projects/olo-acupuncture-thumb.png", alt: "Olo Acupuncture"), 'projects.html#olo-acupuncture'
+
+    .feat-proj.one_half.animated.fadeInUpShort
+      = link_to (tag :img, src: "images/projects/lighthouse-brand-logo.png", class: "last", alt: "Lighthouse Bible Church"), 'projects.html#lighthouse'
+
+.actions.animatedParent
+  = link_to 'View More Projects', 'projects.html', class: 'btn btn-outline'
+  = link_to 'Start a project with me', '#', class: 'btn btn-solid animated pulse contact-trigger'

@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    = yield_content :head
+
+    %meta{ charset: 'utf-8' }
+    %meta{ content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }
+    %meta{ name: "viewport", content: "width=device-width" }
+
+    = favicon_tag 'favicon.ico'
+    = stylesheet_link_tag "site"
+    = stylesheet_link_tag "animations"
+
+    /[if lt IE 9]
+      = stylesheet_link_tag "animations-ie-fix"
+      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"
+
+  %body
+
+    #nav
+      = partial "layouts/nav"
+
+    #main.main
+      = yield
+
+      #footer
+        = partial "layouts/footer"
+
+    = partial "layouts/contact"
+
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    = javascript_include_tag "site"

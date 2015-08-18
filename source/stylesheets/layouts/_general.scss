@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $main-dark;
+}
+
+#main {
+  height: 100%;
+}
+
+a, a:hover, a:focus {
+  text-decoration: none;
+  outline: 0 !important;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em;
+  @include box-sizing(border-box);
+}
+
+#four-oh-four, #soon, #thank-you {
+  height: 100%;
+  background: url(../images/geometry.png);
+  color: white;
+  position: relative;
+
+  .content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    @include translate (0, -50%);
+
+    h2 {
+      font-size: 128px;
+      margin: 0;
+    }
+  }
+}
+
+#soon {
+  background: url(../images/symphony.png);
+  color: $main-dark;
+}

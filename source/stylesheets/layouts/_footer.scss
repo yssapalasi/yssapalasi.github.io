@@ -1,0 +1,25 @@
+#footer {
+  background: $main-dark;
+  color: $main-grey;
+  text-align: center;
+  padding: 1.5em 0;
+
+  .social {
+    padding: 0 0 1em 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      color: $main-grey;
+      font-size: 1.5em;
+      padding: 0 0.5em;
+    }
+  }
+
+  .copyright {
+    font-size: 80%;
+  }
+}

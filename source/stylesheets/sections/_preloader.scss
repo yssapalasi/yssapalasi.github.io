@@ -1,0 +1,14 @@
+#preloader {
+  background: #eee;
+  height: 100%;
+  position: relative;
+  text-align: center;
+
+  .preloader-monogram {
+    position: absolute;
+    width: 100%;
+    img {
+      max-height: 300px;
+    }
+  }
+}

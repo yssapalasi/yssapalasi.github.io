@@ -1,0 +1,11 @@
+.darkOverlay
+  #contact
+    .close-button.close
+      %span.lines
+    %h2 Contact
+    %form{ action: "//formspree.io/elyssajoi.palasi@gmail.com", method: "POST" }
+      %input{ type: "hidden", name: "_next", value: "//elyssapalasi.com/thank-you.html" }
+      %input{ type: "text", name: "name", placeholder: "Name" }
+      %input{ type: "email", name: "_replyto", placeholder: "Email" }
+      %textarea{ name: "message", placeholder: "Please describe your needs." }
+      %input{ type: "submit", value: "Send", class: "btn btn-outline" }

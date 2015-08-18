@@ -1,0 +1,38 @@
+#hero {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image:
+    url(../images/white-shape.svg),
+    url(../images/daisy.jpg);
+  background-size: 100%, cover;
+  background-repeat: no-repeat, no-repeat;
+
+  img {
+    width: 100%;
+  }
+
+  .monogram {
+    position: absolute;
+    top: 40%;
+    @include transform(translate(0, -40%));
+    width: 100%;
+    img {
+      max-height: 230px;
+    }
+  }
+
+  .scroll-to-featured {
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+
+    a {
+      color: $main-dark;
+      font-size: 4em;
+    }
+  }
+}

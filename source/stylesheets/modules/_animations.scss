@@ -1,0 +1,15 @@
+.animate-up {
+  transition: bottom 0.5s ease-out 0s, opacity 0.5s ease-out 0s;
+  position: absolute;
+  bottom: 10%;
+  opacity: 0;
+
+  &.in {
+    bottom: 50%;
+    @include transform(translate(0, 60%));
+  }
+}
+
+.in {
+  opacity: 1;
+}

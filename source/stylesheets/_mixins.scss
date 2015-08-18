@@ -1,0 +1,43 @@
+@mixin colSpan( $span, $total ) {
+
+  @include box-sizing( border-box );
+  display: inline-block;
+  vertical-align: top;
+  width: 100% / $total * $span;
+  margin-right: -0.333em;
+  padding: 0 $gutter / 2;
+
+  &:first-child, &.first {
+    padding-left: 0;
+  }
+
+  &:last-child, &.last {
+    padding-right: 0;
+  }
+
+  &.snug { padding: 0 $gutter / 8; }
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+     -moz-box-sizing: $box-model;
+          box-sizing: $box-model;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;
+}
+
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+        transform: $transforms;
+}
+
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}

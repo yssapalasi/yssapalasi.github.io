@@ -1,0 +1,29 @@
+.actions {
+  text-align: center;
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 0.75em 3em;
+  border: thin solid $tertiary-color;
+  display: inline-block;
+
+  &.btn-outline {
+    color: $tertiary-color;
+
+    &:hover {
+      background: $tertiary-color;
+      color: white;
+    }
+  }
+
+  &.btn-solid {
+    background: $tertiary-color;
+    color: white;
+
+    &:hover {
+      background: transparent;
+      color: $tertiary-color;
+    }
+  }
+}

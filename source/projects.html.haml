@@ -1,0 +1,74 @@
+- content_for :head do
+  %title Projects | Yssa | UI Designer & Front-end Developer
+  %meta{:name => "description", :content => "UI Designer & Front-end Developer"}/
+  %meta{:name => "keywords", :content => "UI design, html, css, wordpress, scss, haml"}/
+
+#projects-list
+  %h2.title Selected Projects
+
+  .container
+    #challenge-app.project.animatedParent.row
+      .animated.fadeInUpShort
+        %h3.project-title Challenge App
+        %p An app that tracks health related apps like daily steps; Worked with NetEngine.
+
+        .one_half
+          = tag :img, src: "/images/projects/10k-challenge.jpg", alt: "Challenge App"
+        .one_half
+          = tag :img, src: "/images/projects/10k-challenge-2.jpg", alt: "Challenge App"
+
+    #free-spirit-dining.project.animatedParent.row
+      .animated.fadeInUpShort
+        %h3.project-title Free Spirit Dining
+        %p A responsive website design concept.
+        = tag :img, src: "/images/projects/freespiritdining.jpg", alt: "Free Spirit Dining"
+
+    #olo-acupuncture.project.animatedParent.row
+      .animated.fadeInUpShort
+        %h3.project-title Olo Acupuncture
+        %p Tri-fold corporate brochure.
+
+        .one_half
+          = tag :img, src: "/images/projects/brochure-inside.jpg", alt: "Olo Acupuncture"
+        .one_half
+          = tag :img, src: "/images/projects/brochure-outside.jpg", alt: "Olo Acupuncture"
+
+    #lighthouse.project.animatedParent.row
+      .animated.fadeInUpShort
+        %h3.project-title Lighthouse Bible Church
+        %p Re-branding; Worked with Propecta
+
+        = tag :img, src: "/images/projects/lighthouse-brand-logo.png", alt: "Lighthouse Bible Church"
+
+    #eagle-star.project.animatedParent.row
+      .animated.fadeInUpShort
+        %h3.project-title Eagle Star
+        %p Web app development of Billing system; Still WIP
+
+        = tag :img, src: "/images/projects/eagle-star.jpg", alt: "Eagle Star"
+
+    #express-app-wizard.project.animatedParent.row
+      .animated.fadeInUpShort
+        %h3.project-title Express App Wizard
+        %p A responsive website design concept.
+
+        = tag :img, src: "/images/projects/expressappwizard.jpg", alt: "Express App Wizard"
+
+    #moneywise.project.animatedParent.row
+      .animated.fadeInUpShort
+        %h3.project-title MoneyWise
+        %p A responsive website design concept; Worked with NetEngine
+
+        = tag :img, src: "/images/projects/moneywise.jpg", alt: "MoneyWise"
+
+    #income-plans.project.animatedParent.row
+      .animated.fadeInUpShort
+        %h3.project-title Income Plans
+        %p A responsive Wordpress website; Worked with Propecta
+
+        = tag :img, src: "/images/projects/income-plans.jpg", alt: "Income Plans"
+
+  %h4.more
+    Want to see more? Please send me an email.
+
+  = link_to 'elyssajoi.palasi@gmail.com', 'mailto:elyssajoi.palasi@gmail.com', class: 'btn btn-solid email-btn'

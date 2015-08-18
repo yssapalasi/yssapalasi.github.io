@@ -1,0 +1,42 @@
+#projects-list {
+  color: $gold;
+
+  .title {
+    margin: 0;
+    padding-top: 3em;
+    color: $main-dark;
+  }
+
+  text-align: center;
+  background-image:
+    url(../images/white-shape.svg),
+    url(../images/geometry.png);
+  background-size: 100%, auto;
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed, fixed;
+
+  img {
+    max-width: 80%;
+  }
+
+  .project {
+    margin-bottom: 4em;
+  }
+
+  .project-title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 28px;
+  }
+
+  .more {
+    font-weight: 400;
+    color: $tertiary-color;
+    font-size: 24px;
+  }
+
+  .email-btn {
+    text-transform: none;
+    margin-bottom: 2em;
+  }
+}
