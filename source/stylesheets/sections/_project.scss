@@ -5,6 +5,10 @@
     margin: 0;
     padding-top: 3em;
     color: $main-dark;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      color: $tertiary-color;
+    }
   }
 
   text-align: center;

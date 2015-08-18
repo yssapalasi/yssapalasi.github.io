@@ -1,5 +1,13 @@
 .actions {
   text-align: center;
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    padding: 0 1.5em;
+
+    .btn:first-child {
+      margin-bottom: 0.5em;
+    }
+  }
 }
 
 .btn {
