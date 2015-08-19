@@ -28,3 +28,11 @@ $('.anchor').on('click', function(e) {
     scrollTop: target.offset().top
   }, 500);
 });
+
+$.preloadImages = function() {
+  for (var i = 0; i < arguments.length; i++) {
+    $("<img />").attr("src", arguments[i]);
+  }
+}
+
+$.preloadImages("images/daisy.jpg", "images/elyssa-palasi-portrait.svg", "images/geometry.png", "images/symphony.jpg", "images/white-shape.svg", "images/yssa-monogram.svg", "images/projects/10k-challenge-2.jpg", "images/projects/10k-challenge-thumb.png", "images/projects/10k-challenge.jpg", "images/projects/brochure-inside.jpg", "images/projects/brochure-outside.jpg", "images/projects/eagle-star.jpg", "images/projects/expressappwizard.jpg", "images/projects/free-spirit-dining-thumb.png", "images/projects/freespiritdining.jpg", "images/projects/income-plans.jpg", "images/projects/lighthouse-brand-logo.png", "images/projects/moneywise.jpg", "images/projects/olo-acupuncture-thumb.png");
