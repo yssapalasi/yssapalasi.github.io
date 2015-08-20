@@ -1,5 +1,5 @@
 set :site_url, "http://elyssapalasi.com"
-set :site_description, "UI Designer & Front-end Developer"
+set :site_description, "Yssa is a UI Designer & Front-end Developer based in the Philippines."
 
 page "CNAME", layout: false
 
