@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+
+Sitemap: http://elyssapalasi.com/sitemap.xml
